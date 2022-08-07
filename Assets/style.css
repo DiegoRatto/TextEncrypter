@@ -152,10 +152,24 @@ body{
     margin-left: 28%;
     color: var(--bg-semi);
     width: 50%;
-    height: 10%;
+    height: 2.5%;
     border: none;
     outline: none;
+    resize: none;
     font-size: 16px;
+    background-color: red;
+}
+.bx-copy{
+    margin-right: 2%;
+    font-size: 20px;
+}
+.bx-lock{
+    margin-right: 2%;
+    font-size: 20px;
+}
+.bx-lock-open{
+    margin-right: 2%;
+    font-size: 20px;
 }
 #copy{
     margin-left: 18%;
@@ -189,14 +203,6 @@ body{
     background-color: #bfd3ec;
     transform: scale(1.02);
     cursor: pointer;
-}
-.bx-lock{
-    margin-right: 2%;
-    font-size: 20px;
-}
-.bx-lock-open{
-    margin-right: 2%;
-    font-size: 20px;
 }
 #copy:hover{
     transition-duration: 4ms;
