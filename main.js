@@ -37,7 +37,7 @@ function copyText(){
     Swal.fire({
         position: 'center',
         icon: 'success',
-        title: 'Se ha copiado el texto correctamente',
+        title: 'Se ha copiado el texto correctamente.',
         showConfirmButton: false,
         timer: 1500
       })
