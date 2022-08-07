@@ -1,10 +1,10 @@
 function encrypt(){
-    var text = document.getElementById("input-text").value.toLowerCase();
-    var txtEncrypted = text.replace(/e/igm,"enter");
-    var txtEncrypted = txtEncrypted.replace(/o/igm,"ober");
-    var txtEncrypted = txtEncrypted.replace(/i/igm,"imes");
-    var txtEncrypted = txtEncrypted.replace(/a/igm,"ai");
-    var txtEncrypted = txtEncrypted.replace(/u/igm,"ufat");
+    let text = document.getElementById("input-text").value.toLowerCase();
+    let txtEncrypted = text.replace(/e/igm,"enter");
+    txtEncrypted = txtEncrypted.replace(/o/igm,"ober");
+    txtEncrypted = txtEncrypted.replace(/i/igm,"imes");
+    txtEncrypted = txtEncrypted.replace(/a/igm,"ai");
+    txtEncrypted = txtEncrypted.replace(/u/igm,"ufat");
 
     document.getElementById("search-img").style.display = "none";
     document.getElementById("text").style.display = "none";
@@ -14,12 +14,12 @@ function encrypt(){
     document.getElementById("input-text").value = "";
 }
 function desencrypt(){
-    var text = document.getElementById("input-text").value.toLowerCase();
-    var txtEncrypted = text.replace(/enter/igm,"e");
-    var txtEncrypted = txtEncrypted.replace(/ober/igm,"o");
-    var txtEncrypted = txtEncrypted.replace(/imes/igm,"i");
-    var txtEncrypted = txtEncrypted.replace(/ai/igm,"a");
-    var txtEncrypted = txtEncrypted.replace(/ufat/igm,"u");
+    let text = document.getElementById("input-text").value.toLowerCase();
+    let txtEncrypted = text.replace(/enter/igm,"e");
+    txtEncrypted = txtEncrypted.replace(/ober/igm,"o");
+    txtEncrypted = txtEncrypted.replace(/imes/igm,"i");
+    txtEncrypted = txtEncrypted.replace(/ai/igm,"a");
+    txtEncrypted = txtEncrypted.replace(/ufat/igm,"u");
 
     document.getElementById("search-img").style.display = "none";
     document.getElementById("text").style.display = "none";
@@ -29,7 +29,7 @@ function desencrypt(){
 
 }
 function copyText(){
-    var container = document.getElementById("text2");
+    let container = document.getElementById("text2");
     container.select();
     document.execCommand("copy");
     document.getElementById("input-text").focus();
