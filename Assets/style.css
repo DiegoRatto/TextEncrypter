@@ -1,0 +1,206 @@
+/*=======Font family IBM PLEX SANS=======*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400&display=swap');
+
+/*=======Background Palet=======*/
+:root{
+    --txt-colour: #343A40;
+    --bg-colour: #E5E5E5;
+    --bg-dark: #052051;
+    --bg-semi-dark: #072B61;
+    --bg-semi: #0A3871;
+    --bg-semi-light: #356EA9;
+    --bg-light: #609ED4;
+}
+/*=======Font=======*/
+:root{
+    --ftn-IBM-Plex-Sans: "IBM Plex Sans", sans-serif;
+}
+
+body{  
+    margin: 0px;
+    padding: 0px;
+    background: var(--bg-colour);
+    font-family: var(--ftn-IBM-Plex-Sans);
+}
+.container{
+    width: auto;
+    height: 845px;
+    padding: 5px;
+}
+.container-logo{
+    width: 100%;
+    float: left;
+}
+.logo-img{
+    margin-top: 1%;
+    margin-left: 2%;
+    float: inherit;
+    
+}
+.container-middle{
+    float: left;
+    width: 69%;
+    height: 70%;
+    border-radius: 24px;
+}
+.text-input{
+    float: left;
+    margin-left: 16%;
+    width: 65%;
+    height: 30%;
+    color: var(--bg-semi);
+    font-size: 32px;
+    border: none;
+    outline: none;
+    color: var(--bg-semi);
+    background-color: var(--bg-colour);
+}
+.social-bar{
+    position: fixed;
+    top: 35%;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    align-items: flex-start;
+    z-index: 100;
+}
+.icon{
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+}
+.icon-linkedin{
+    background: #0e76a8;
+}
+.icon-github{
+    background:#333333;
+}
+.icon:first-child{
+    border-radius: 0 1rem 0 0;
+}
+.icon:last-child{
+    border-radius: 0 0 1rem 0;
+}
+.container-end{
+    float: right;
+    width: 30%;
+    height: 89%;
+    margin-right: 1%;
+    border-radius: 24px;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.1);
+    background: white;
+}
+#search-img{
+    height: 300px;
+    margin-top: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.btn{
+    float: left;
+    width: 69%;
+    height: auto;
+    border-radius: 24px;
+}
+.icon-alert{
+    position: relative;
+    color: #495057;
+    top: 38px;
+    margin-left: 16%;
+
+}
+.text-alert{
+    color: #495057;
+    margin-left: 18%;
+
+}
+#btn-encrypter{
+    margin-top: 0;
+    padding: 24px;
+    width: 30%;
+    height: 66%;
+    font-size: 16px;
+    border-radius: 24px;
+    margin-left: 15%;
+    color: white;
+    border: none;
+    background: var(--bg-semi);
+}
+#btn-desencrypter{
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    font-size: 16px;
+    border-radius: 24px;
+    margin-left: 10%;
+    color: var(--bg-semi);
+    border: solid 1px var(--bg-semi);
+    background: #D8DFE8;
+}
+#text{
+    margin-left: 7%;
+    margin-right: 5%;
+    color: var(--txt-colour);
+    font-size: 24px;
+    text-align: center;
+}
+#text2{
+    float: left;
+    margin-left: 28%;
+    color: var(--bg-semi);
+    width: 50%;
+    height: 10%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+#copy{
+    margin-left: 18%;
+    margin-top: 125%;
+    padding: 24px;
+    width: 65%;
+    height: 9%;
+    color: var(--bg-semi);
+    background: #D8DFE8;
+    border: solid 1px var(--bg-semi);
+    border-radius: 24px;
+    font-size: 16px;
+    display: none;
+}
+::placeholder {color: var(--bg-semi);}
+
+.icon:hover {
+    padding-left: 4rem;
+    border-radius: 0 1rem 1rem 0;
+    box-shadow: 0 0 .5rem rgba(0,0,0,0.42);
+}
+#btn-encrypter:hover{
+    transition-duration: 4ms;
+    background-color: #072B61;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#btn-desencrypter:hover{
+    transition-duration: 4ms;
+    background-color: #bfd3ec;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.bx-lock{
+    margin-right: 2%;
+    font-size: 20px;
+}
+.bx-lock-open{
+    margin-right: 2%;
+    font-size: 20px;
+}
+#copy:hover{
+    transition-duration: 4ms;
+    background-color: #bfd3ec;
+    transform: scale(1.02);
+    cursor: pointer;
+}
