@@ -8,7 +8,7 @@ Challenge proposed by Oracle next education 2022
 
 ## Direct link to deployed project
 ### [Web site](https://diegoratto.github.io/ChallengeONE-TextEncrypter.github.io/)
-## Instruccions
+## Instructions
 
 Work on an application that encrypts texts, so you can exchange secret messages with other people who know the secret of the encryption used.
 
