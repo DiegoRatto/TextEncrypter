@@ -10,30 +10,46 @@
     <title>Text Encrypter</title>
 </head>
 <body>
-    <div class="container">
-        <div class="container-logo">
-            <img class="logo-img" src="Assets/aluraIcon.png" alt="Alura Logo">
+    <img class="logo" src="Assets/aluraIcon.png" alt="Logo Alura">
+    <main class="container-main">
+        <div class="social-bar-first">
+            <a class="icon icon-linkedin" href="https://www.linkedin.com/in/diegoratto/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            <a class="icon icon-github" href="https://github.com/DiegoRatto" target="_blank"><i class='bx bxl-github' ></i></a>
         </div>
-        <div class="container-middle">
-            <input class="text-input" id="input-text" type="tex" placeholder="Ingrese el texto aquí">
-            <div class="social-bar">
-                <a class="icon icon-linkedin" href="https://www.linkedin.com/in/diegoratto/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-                <a class="icon icon-github " href="https://github.com/DiegoRatto" target="_blank"><i class='bx bxl-github' ></i></a>
+        <div class="social-bar-second">
+            <a class="icon-second icon-linkedin-second" href="https://www.linkedin.com/in/diegoratto/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            <a class="icon-second icon-github-second" href="https://github.com/DiegoRatto" target="_blank"><i class='bx bxl-github' ></i></a>
+        </div>
+        <div class="container-left">
+            <div class="container-text">
+                <textarea class="input-text" id="input-text" type="text" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="container-bottom-left">
+                <div class="container-info-text">
+                    <p class="info-text"><i class='bx bxs-error-circle'></i>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="container-btn-left">
+                    <button class="btn btn-encrypter" onclick="encrypter()">Encriptar</button>
+                    <button class="btn btn-desencrypter" onclick="desencrypter()">Desencriptar</button>
+                </div>
             </div>
         </div>
-        <div class="container-end">
-            <img id="search-img" src="Assets/searchImage.png" alt="Search Image">
-            <h1 id="text">Ningún mensaje fue encontrado</h1>
-            <textarea id="text2"name="name" rows="8" readonly cols="80">Ingrese el texto a encriptar</textarea>
-            <button id="copy" onclick="copyText()"><i class='bx bx-copy'></i>Copiar</button>
+        <div class="container-right">
+            <div class="first-part" id="first-part">
+                <img class="search-image" id="search-image" src="Assets/searchImage.png">
+                <h1 class="text-header" id="text-info">Ningún mensaje fue <br class="break"> encontrado</h1>
+                <p class="text-paragraph" id="text-info">Ingresa el texto que desees encriptar o <br class="break"> desencriptar.</p>
+            </div>
+            <div class="second-part" id="second-part">
+                <div class="container-show-text">
+                    <textarea class="show-text" id="show-text" readonly></textarea>
+                </div>
+                <div class="container-btn-copy">
+                    <button class="btn-copy" id="btn-copy" onclick="copy();">Copiar</button>
+                </div>
+            </div>
         </div>
-        <div class="btn">
-            <i class='bx bxs-error-circle icon-alert'></i>
-            <p class="text-alert">Solo letras minúsculas y sin acentos</p>
-            <button id="btn-encrypter" onclick="encrypt()"><i class='bx bx-lock'></i>Encriptar</button>
-            <button id="btn-desencrypter" onclick="desencrypt()"><i class='bx bx-lock-open' ></i>Desencriptar</button>
-        </div>
-    </div>
+        </main>
     <script src="main.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>

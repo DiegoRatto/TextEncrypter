@@ -1,8 +1,8 @@
 let capital_letters = "ABCDEFGHYJKLMNÑOPQRSTUVWXYZ";
-let letters_accents = "áéíóú";
+let letters_accents = "áéíóúý";
 let capital = 0;
 
-function encrypt(){
+function encrypter(){
     let text = document.getElementById("input-text").value;
     capital = 0;
     if (text == "" || text == " " ){
@@ -33,18 +33,19 @@ function encrypt(){
             txtEncrypted = txtEncrypted.replace(/i/igm,"imes");
             txtEncrypted = txtEncrypted.replace(/a/igm,"ai");
             txtEncrypted = txtEncrypted.replace(/u/igm,"ufat");
-        
-            document.getElementById("search-img").style.display = "none";
-            document.getElementById("text").style.display = "none";
-            document.getElementById("text2").innerHTML = txtEncrypted;
-            document.getElementById("copy").style.display = "show";
-            document.getElementById("copy").style.display = "inherit";
+            document.getElementById("search-image").style.display = "none";
+            document.getElementById("first-part").style.display = "none";
+            document.getElementById("text-info").style.display = "none";
+            document.getElementById("show-text").innerHTML = txtEncrypted;
+            document.getElementById("show-text").style.display = "flex";
+            document.getElementById("show-text").style.display = "inherit";
+            document.getElementById("second-part").style.display = "show";
+            document.getElementById("second-part").style.display = "inherit";
             document.getElementById("input-text").value = "";
         }
     }
 }
-
-function desencrypt(){
+function desencrypter(){
     let text = document.getElementById("input-text").value;
     capital = 0;
     if (text == "" || text == " "){
@@ -75,26 +76,25 @@ function desencrypt(){
             txtEncrypted = txtEncrypted.replace(/imes/igm,"i");
             txtEncrypted = txtEncrypted.replace(/ai/igm,"a");
             txtEncrypted = txtEncrypted.replace(/ufat/igm,"u");
-            document.getElementById("search-img").style.display = "none";
-            document.getElementById("text").style.display = "none";
-            document.getElementById("text2").innerHTML = txtEncrypted;
-            document.getElementById("copy").style.display = "show";
-            document.getElementById("copy").style.display = "inherit";
+            document.getElementById("search-image").style.display = "none";
+            document.getElementById("first-part").style.display = "none";
+            document.getElementById("show-text").innerHTML = txtEncrypted;
+            document.getElementById("second-part").style.display = "flex";
+            document.getElementById("second-part").style.display = "inherit";
             document.getElementById("input-text").value = "";
         }    
     }
 }
 
-function copyText(){
-    let container = document.getElementById("text2");
+function copy(){
+    let container = document.getElementById("show-text");
     container.select();
     document.execCommand("copy");
     document.getElementById("input-text").focus();
-
     Swal.fire({
         position: 'center',
         icon: 'success',
-        title: 'Se ha copiado el texto correctamente.',
+        title: 'Texto copiado correctamente.',
         showConfirmButton: false,
         timer: 1500
       })
